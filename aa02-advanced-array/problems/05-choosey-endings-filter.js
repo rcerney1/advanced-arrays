@@ -8,6 +8,23 @@ HINT: There are built in JavaScript functions that will help with determining if
 a strings ends a certain way. Go see if you can find it on MDN!
 
 Examples:
+*/
+
+let chooseyEndings = function(words, suffix) {
+  // Your code here
+  
+  // if (typeof words !== ) {
+  //   return []
+  // }
+
+  if (!Array.isArray(words)) {
+    return []
+  }
+
+  let filter1 = words.filter((word) => word.slice(word.length - suffix.length) === suffix)
+  //console.log(filter1);
+  return filter1
+};
 
 console.log(chooseyEndings(['family', 'hound', 'catalyst', 'fly', 'timidly', 'bond'], 'ly'));
 // [ 'family', 'fly', 'timidly' ]
@@ -23,11 +40,6 @@ console.log(chooseyEndings(['simplicity', 'computer', 'felicity'], 'ily'));
 
 console.log(chooseyEndings(17, 'ily'));
 // [ ]
-*/
-
-let chooseyEndings = function(words, suffix) {
-  // Your code here 
-};
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
