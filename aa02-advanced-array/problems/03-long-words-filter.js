@@ -8,14 +8,16 @@ Solve this using Array's `filter()` method.
 
 Examples:
 
-console.log(longWords(['bike', 'skateboard','scooter', 'moped'])); // [ 'skateboard', 'scooter' ]
-console.log(longWords(['couscous', 'soup', 'ceviche', 'solyanka' ,'taco'])); // [ 'couscous', 'ceviche', 'solyanka' ]
-
 */
 
 let longWords = function(words) {
     // Your code here 
+    let result = words.filter((word) => word.length > 5)
+    return result
 };
+
+console.log(longWords(['bike', 'skateboard','scooter', 'moped'])); // [ 'skateboard', 'scooter' ]
+console.log(longWords(['couscous', 'soup', 'ceviche', 'solyanka' ,'taco'])); // [ 'couscous', 'ceviche', 'solyanka' ]
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
